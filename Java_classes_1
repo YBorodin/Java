@@ -1,0 +1,25 @@
+class Box {
+        int width;  // ширина коробки - переменная
+        int height; // высота коробки
+        int depth;  // глубина коробки
+
+        // устанавливаем размеры коробки
+        Box(int w, int h, int d) { //конструктор класса Box
+            width = w;
+            height = h;
+            depth = d;
+        }
+
+        // вычисляем объём коробки
+        int getVolume() {   // метод вычисления объема коробки
+            return width * height * depth;
+        }
+    }
+
+    class BoxCreate {
+
+        public static void main(String args[]) { // метод, который исполняет специфическую задачу. Это место с которого начинается выполнение всех приложений Java. 
+            Box b = new Box(1, 2, 3);
+            System.out.println("Box Volume = " + b.width + b.height + b.depth);
+        }
+    }
