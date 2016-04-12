@@ -17,9 +17,15 @@ class Box {
     }
 
     class BoxCreate {
-
-        public static void main(String args[]) { // метод, который исполняет специфическую задачу. Это место с которого начинается выполнение всех приложений Java. 
-            Box b = new Box(1, 2, 3);
+        // метод main() исполняет специфическую задачу. 
+        //Это место с которого начинается выполнение всех приложений Java.
+        public static void main(String args[]) { 
+            /*
+            Box b; // определение объекта
+            b = new Box(1, 2, 3); // инициализация объекта */
+            Box b = new Box(1, 2, 3); // но лучше определение и инициализацию делать в одной строке
+        
             System.out.println("Box Volume = " + b.width + b.height + b.depth);
         }
     }
+    
